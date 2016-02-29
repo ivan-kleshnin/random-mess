@@ -1,4 +1,4 @@
-# HS / JS isomorphism
+# From JS to Haskell and back again
 
 Sample backend program to calculate and output file length (in chars).<br/>
 File path is passed as a first CLI argument.
