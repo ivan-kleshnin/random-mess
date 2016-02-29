@@ -58,7 +58,12 @@ main = getArgs >>= readFile . head >>= print . length
 
 ---
 
-On the flip side... 
+```
+$ echo "main = getArgs >>= readFile . head >>= print . length" > sample.hs
+$ echo "pwned" > test.txt
+$ runhaskell sample.hs test.txt
+5
+```
 
 ---
 
