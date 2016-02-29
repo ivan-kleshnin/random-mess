@@ -9,6 +9,11 @@ File path is passed as a first CLI argument.
 
 #### 1. Promises :suspect:
 ```js
+// getArgs -- read CLI arguments
+// compose -- Ramda.compose 
+// head -- xs[0] equivalent
+// readFile -- read file
+// length -- ::length
 main = getArgs().then(compose(readFile, head)).then(compose(print, length))
 ```
 
