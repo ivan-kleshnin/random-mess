@@ -106,7 +106,7 @@ main = chain(compose(print, length), chain(compose(readFile, head), getArgs()))
 main = getArgs().chain(compose(readFile, head)).chain(compose(print, length))
 ```
 
-#### 8. Replace `chain` with `flatMap`
+#### 8. Replace `chain` with `then` (`flatMap`)
 ```js
-main = getArgs().flatMap(compose(readFile, head)).flatMap(compose(print, length))
+main = getArgs().then(compose(readFile, head)).then(compose(print, length))
 ```
