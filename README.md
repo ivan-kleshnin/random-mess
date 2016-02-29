@@ -59,7 +59,7 @@ main = getArgs >>= readFile . head >>= print . length
 ---
 
 ```
-$ echo "main = getArgs >>= readFile . head >>= print . length" > sample.hs
+$ echo "import System.Environment; import Control.Monad; main = getArgs >>= readFile . head >>= print . length" > sample.hs
 $ echo "pwned" > test.txt
 $ runhaskell sample.hs test.txt
 5
